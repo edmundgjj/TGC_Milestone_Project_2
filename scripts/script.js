@@ -13,14 +13,15 @@ $(document).ready(function() {
 });
 
 function getMovies(searchText) {
-    axios.get('http://www.omdbapi.com/?apikey=2f191c5b&t=' + searchText)
+    axios.get('http://www.omdbapi.com/?apikey=2f191c5b&s=' + searchText)
         .then(function(response) {
             console.log(response);
             var movies = response.data.Search;
             var output = '';
             $.each(movies, function(index, movie) {
                 output +=
-                    "\n <div class=\"col-md-3\">\n<div class=\"well text-center\">\n<img src=\"".concat(movie.Poster, "\">\n<h5>")
+                    "\n <div class=\"col-md-3\">\n<div class=\"well text-center\">\n<img src=\""
+                    .concat(movie.Poster, "\">\n<h5>")
                     .concat(movie.Title, "</h5>\n<a onclick=\"movieSelected('")
                     .concat(movie.imdbID, "')\" class=\"btn btn-primary\" href=\"#\">Movie Details</a>\n</div>\n</div>\n");
             });
@@ -44,7 +45,8 @@ function getMovie() {
         .then(function(response) {
             console.log(response);
             var movie = response.data;
-            var output = "\n <div class=\"row\">\n <div class=\"col-md-4\">\n <img src=\"".concat(movie.Poster, "\" class=\"thumbnail\">\n </div>\n <div class=\"col-md-8\">\n <h2> ")
+            var output = "\n <div class=\"row\">\n <div class=\"col-md-4\">\n <img src=\""
+                .concat(movie.Poster, "\" class=\"thumbnail\">\n </div>\n <div class=\"col-md-8\">\n <h2> ")
                 .concat(movie.Title, "</h2>\n <ul class=\"list-group\">\n <li class=\"list-group-item\"><strong>Genre:</strong>")
                 .concat(movie.Genre, "</li>\n <li class=\"list-group-item\"><strong>Released:</strong> ")
                 .concat(movie.Released, "</li>\n <li class=\"list-group-item\"><strong>Rated:</strong> ")
