@@ -6,14 +6,14 @@ api_key = '2f191c5b'
 
 $(document).ready(() => {
     $('#searchForm').on('submit', (e) => {
-        let searchText = $('#searchText').val();
-        getMovies(searchText);
+        let textSearch = $('#textSearch').val();
+        getMovies(textSearch);
         e.preventDefault();
     });
 });
 
-function getMovies(searchText) {
-    axios.get('http://www.omdbapi.com/?apikey=2f191c5b&t=' + searchText)
+function getMovies(textSearch) {
+    axios.get('http://www.omdbapi.com/?apikey=2f191c5b&t=' + textSearch)
         .then((response) => {
             console.log(response);
             let movies = response.data.Search;
