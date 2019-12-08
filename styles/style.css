@@ -1,13 +1,30 @@
-#movies img,
-#movie img {
-    width: 65%;
-}
-
-@media(min-width:960px) {
-    #movies .col-md-3 .box {
-        height: 390px;
+    body {
+        background-image: url(/Images/Movie\ Theatre.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #464646;
     }
-    #movies .col-md-3 img {
-        height: 240px;
+    
+    #movies img,
+    #movie img {
+        width: 65%;
     }
-}
+    
+    @media(min-width:960px) {
+        #movies .col-md-3 .box {
+            height: 390px;
+        }
+        #movies .col-md-3 img {
+            height: 240px;
+        }
+    }
+    
+    .form {
+        text-align: center;
+    }
+    
+    #searchForm {
+        text-align: center;
+    }

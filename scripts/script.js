@@ -34,7 +34,7 @@ function selectMovie(id) {
     window.location = 'movie.html';
     return false;
 }
-// test traversy
+
 function retrievemovie() {
     let movieId = sessionStorage.getItem('movieId');
     let xhr = new XMLHttpRequest();
@@ -68,31 +68,3 @@ function retrievemovie() {
     xhr.send();
 }
 retrievemovie()
-
-// function retrievemovie() {
-//     let movieId = sessionStorage.getItem('movieId');
-//     axios.all([axios.get(api_info + movieId)])
-//         .then(function(response) {
-//             console.log(response);
-//             // let movie = response.data;
-//             // let output = "\n <div class=\"row\">\n <div class=\"col-md-4\">\n <img src=\""
-//             //     .concat(movie.Poster, "\" class=\"thumbnail\">\n </div>\n <div class=\"col-md-8\">\n <h2> ")
-//             //     .concat(movie.Title, "</h2>\n <ul class=\"list-group\">\n <li class=\"list-group-item\"><strong>Genre:</strong>")
-//             //     .concat(movie.Genre, "</li>\n <li class=\"list-group-item\"><strong>Released:</strong> ")
-//             //     .concat(movie.Released, "</li>\n <li class=\"list-group-item\"><strong>Rated:</strong> ")
-//             //     .concat(movie.Rated, "</li>\n <li class=\"list-group-item\"><strong>IMDB Rating:</strong> ")
-//             //     .concat(movie.imdbRating, "</li>\n <li class=\"list-group-item\"><strong>Director:</strong> ")
-//             //     .concat(movie.Director, "</li>\n <li class=\"list-group-item\"><strong>Writer:</strong> ")
-//             //     .concat(movie.Writer, "</li>\n <li class=\"list-group-item\"><strong>Actors:</strong> ")
-//             //     .concat(movie.Actors, "</li>\n </ul>\n </div>\n </div>\n <div class=\"row\">\n <div class=\"box\">\n <h3>Plot</h3>\n")
-//             //     .concat(movie.Plot, "\n <hr>\n <a href=\"http://imdb.com/title/")
-//             //     .concat(movie.imdbID, "\" target=\"_blank\" class=\"btn btn-primary\">View IMDB</a>\n <a href=\"index.html\" class=\"btn btn-default\">Go Back To Search</a>\n </div>\n </div>\n ");
-//             // $('#movie')
-//             //     .html(output);
-//         })
-//         .catch(function(err) {
-//             console.log(err);
-//         });
-// }
-
-// retrievemovie()
