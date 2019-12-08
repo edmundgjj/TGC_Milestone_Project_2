@@ -48,7 +48,7 @@ function retrievemovie() {
                 let movie = response;
                 output = "\n <div class=\"row\">\n <div class=\"col-md-4\">\n <img src=\""
                     .concat(movie.Poster, "\" id=\"poster\" class=\"thumbnail\">\n </div>\n <div class=\"col-md-8\">\n <h2> ")
-                    .concat(movie.Title, "</h2>\n <ul class=\"list-group\">\n <li class=\"list-group-item\"><strong>Genre:</strong>")
+                    .concat(movie.Title, "</h2>\n <ul class=\"list-group\">\n <li class=\"list-group-item\"><strong>Genre: </strong>")
                     .concat(movie.Genre, "</li>\n <li class=\"list-group-item\"><strong>Released:</strong> ")
                     .concat(movie.Released, "</li>\n <li class=\"list-group-item\"><strong>Rated:</strong> ")
                     .concat(movie.Rated, "</li>\n <li class=\"list-group-item\"><strong>IMDB Rating:</strong> ")
@@ -57,7 +57,7 @@ function retrievemovie() {
                     .concat(movie.Writer, "</li>\n <li class=\"list-group-item\"><strong>Actors:</strong> ")
                     .concat(movie.Actors, "</li>\n </ul>\n </div>\n </div>\n <div id=\"desc\" class=\"row\">\n <div class=\"box\">\n <h3>Plot</h3>\n")
                     .concat(movie.Plot, "\n <hr>\n <a href=\"http://imdb.com/title/")
-                    .concat(movie.imdbID, "\" target=\"_blank\" class=\"btn btn-primary\">View IMDB</a>\n <a href=\"index.html\" class=\"btn btn-default\">Home</a>\n </div>\n </div>\n ");
+                    .concat(movie.imdbID, "\" target=\"_blank\" class=\"btn btn-primary\">View IMDB</a>\n <a href=\"index.html\" class=\"btn btn-default\">Go Back</a>\n </div>\n </div>\n ");
                 // console.log(output)
             } else {
                 output = '<li>Something went wrong</li>';
