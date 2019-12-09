@@ -19,7 +19,7 @@ function retrievemovies(movie_title) {
                     "\n <div class=\"col-md-3\">\n<div class=\"box text-center\">\n<img src=\""
                     .concat(movie.Poster, "\">\n<h5>")
                     .concat(movie.Title, "</h5>\n<a onclick=\"selectMovie('")
-                    .concat(movie.imdbID, "')\" class=\"btn btn-primary\" href=\"#\">Movie Details</a>\n</div>\n</div>\n");
+                    .concat(movie.imdbID, "')\" class=\"btn btn-primary movie-details\" href=\"#\">Movie Details</a>\n</div>\n</div>\n");
             });
             $('#movies')
                 .html(output);
