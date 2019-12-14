@@ -2,17 +2,7 @@ let api_query = 'http://www.omdbapi.com/?apikey=2f191c5b&s=';
 let api_info = 'http://www.omdbapi.com/?apikey=2f191c5b&i=';
 let input_form = document.getElementById("searchForm");
 let input_text = document.getElementById("searchText");
-let best_movies = document.getElementById("bestofhide")
-
-
-// $(document).ready(function() {
-//     $('#searchForm').on('submit', function(e) {
-//         let searchText = $('#searchText').val();
-//         $('#bestofhide').hide();
-//         retrievemovies(searchText);
-//         e.preventDefault();
-//     });
-// });
+let best_movies = document.getElementById("bestofhide");
 
 document.addEventListener("DOMContentLoaded", function() {
     if (input_form) {
