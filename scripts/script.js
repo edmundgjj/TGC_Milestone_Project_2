@@ -1,25 +1,28 @@
 let api_query = 'http://www.omdbapi.com/?apikey=2f191c5b&s=';
 let api_info = 'http://www.omdbapi.com/?apikey=2f191c5b&i=';
+let input_form = document.getElementById("searchForm");
+let input_text = document.getElementById("searchText");
+let best_movies = document.getElementById("bestofhide")
 
-$(document).ready(function() {
-    $('#searchForm').on('submit', function(e) {
-        let searchText = $('#searchText').val();
-        $('#bestofhide').hide();
-        retrievemovies(searchText);
-        e.preventDefault();
-    });
-});
 
-// let input = document.getElementById("searchForm");
-
-// input.addEventListener("submit", function(e) {
-//     if (event.keyCode === 13) {
-//         retrievemovies(input.value);
-//         document.getElementById("bestofhide").style.display = "none";
+// $(document).ready(function() {
+//     $('#searchForm').on('submit', function(e) {
+//         let searchText = $('#searchText').val();
+//         $('#bestofhide').hide();
+//         retrievemovies(searchText);
 //         e.preventDefault();
-//         // console.log(input.value)
-//     }
+//     });
 // });
+
+document.addEventListener("DOMContentLoaded", function() {
+    if (input_form) {
+        input_form.addEventListener("submit", function(e) {
+            best_movies.style.display = "none";
+            retrievemovies(input_text.value);
+            e.preventDefault();
+        });
+    }
+});
 
 function retrievemovies(movie_title) {
     axios.get(api_query + movie_title)
@@ -67,9 +70,8 @@ function retrievemovie() {
                     .concat(movie.Director, "</li>\n <li class=\"list-group-item\"><strong>Writer:</strong> ")
                     .concat(movie.Writer, "</li>\n <li class=\"list-group-item\"><strong>Actors:</strong> ")
                     .concat(movie.Actors, "</li>\n </ul>\n </div>\n </div>\n <div id=\"desc\" class=\"row\">\n <div class=\"box\">\n <h3>Plot</h3>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">")
-                    .concat(movie.Plot, "</li><ul>\n <hr>\n <a href=\"http://imdb.com/title/")
-                    .concat(movie.imdbID, "\" target=\"_blank\" class=\"btn btn-primary\">View IMDB</a>\n <a href=\"index.html\" class=\"btn btn-default\">Go Back</a>\n </div>\n </div>\n ");
-                console.log(output)
+                    .concat(movie.Plot, "</li><ul class=\"movie-btns\">\n <hr>\n <a href=\"http://imdb.com/title/")
+                    .concat(movie.imdbID, "\" target=\"_blank\" class=\"btn btn-primary\">View IMDB</a>\n <a href=\"index.html\" class=\"btn btn-primary\">Go Back</a>\n </div>\n </div>\n ");
             } else {
                 output = '<li>Something went wrong</li>';
             }
@@ -80,4 +82,4 @@ function retrievemovie() {
     };
     xhr.send();
 }
-retrievemovie()
+retrievemovie();

@@ -1,4 +1,5 @@
 /* Background image */
+
 body {
     font-family: 'arial', sans-serif;
     font-size: 16px;
@@ -9,71 +10,108 @@ body {
     background-size: cover;
     text-align: center;
 }
+
 .navbar-brand {
     color: white;
 }
+
 input {
     width: 80%;
 }
+
 .card-img-top {
     margin-left: 8px;
     width: 98%;
 }
+
+
 /* Index.html Poster Size */
-#movies img, #movie img {
+
+#movies img,
+#movie img {
     width: 65%;
 }
+
 .movie-details {
     margin-bottom: 30px;
 }
+
+
 /* Movie.html Header */
-h2, h3 {
+
+h2,
+h3 {
     margin-top: 10px;
     text-align: center;
 }
+
 h5 {
     font-size: 2vh;
     margin-top: 10px;
 }
+
+
 /* Footer */
-.footer i {
+
+.footer i,
+.movie-footer i {
     color: #ffffff;
     margin-top: 12vh;
 }
+
+.box {
+    margin-top: 20px;
+}
+
+.movie-btns {
+    margin-left: -44px;
+}
+
+
 /* Movie Poster @ movie.html - Mobile S/M/L */
+
 @media(min-width:300px) and (max-width:767px) {
     #poster {
         position: relative;
         left: auto;
-   }
+    }
 }
+
+
 /* Plot & Below @ movie.html - Mobile S/M/L */
+
 @media(min-width:300px) and (max-width:575px) {
     #desc {
         margin: 10px auto;
-   }
+    }
 }
+
+
 /* Movie Poster @ movie.html - Tablet */
+
 @media(min-width:768px) {
     #movie img {
         width: 100%;
         margin-top: 32%;
-   }
+    }
 }
-.box {
-    margin-top: 20px;
-}
+
+
 /* Movie Poster @ movie.html - Laptop */
+
 @media(min-width:1024px) {
     #movie img {
         width: 90%;
         margin-top: 23%;
-   }
+    }
 }
+
+
 /* Movie Poster @ movie.html - Desktop */
+
 @media(min-width:1440px) {
     #movie img {
         width: 90%;
         margin-top: 19%;
-   }
+    }
 }
