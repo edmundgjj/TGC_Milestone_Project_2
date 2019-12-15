@@ -19,9 +19,9 @@ I chose a dark theme for this website because the lighting in movie theatres are
 
 The landing page is kept simple and minimalistic because the main aim is to have the users input a movie title and should not have too many other distractions.
 
-I also included a collage image of some movie posters I stitched together on photoshop that links to Rotten Tomatoes' Top 10 Movies of 2019 for the users' reference.
+I also included a collage image of some movie posters I stitched together on photoshop that links to Rotten Tomatoes' THE BEST MOVIES OF 2019 for the users' reference.
 
-Once the users have keyed in and submitted the movie title, the image of the 'Rotten Tomatoes' Top 10 Movies of 2019' disappears and the search results takes its place. Unfortunately, the 
+Once the users have keyed in and submitted the movie title, the image of the 'Rotten Tomatoes' THE BEST MOVIES OF 2019' disappears and the search results takes its place. Unfortunately, the 
 OMDB api only returns a maximum of ten results but it should suffice if the user is specific with his/her search string entry . The movie search results are placed neatly side by side with a button 'movie details' that invites users to click on it for added information.
 
 Once the button is clicked, another page is loaded which shows the details of the search. I would expect movie buffs to be visual creatures and I included the poster of the search to be prominently displayed on the left. On the right side, details of the movie is displayed in an easy to read format.
@@ -35,7 +35,7 @@ An input box is provided which allows the users to type in the movie or tv serie
 
 The colors used on the elements on the landing page are chosen to not contrast the dark theme, but to compliment it.
 
-Upon hitting enter with an input on the search box, the movie poster collage image linking to Rotten Tomatoes' Top 10 Movies of 2019 makes way for the search results to avoid unnecessary clutter for the user.
+Upon hitting enter with an input on the search box, the movie poster collage image linking to Rotten Tomatoes' THE BEST MOVIES OF 2019 makes way for the search results to avoid unnecessary clutter for the user.
 
 If the user clicks on the 'movie details' of the returned results, the user is brought to the [movie page](https://papadum-is-nice.github.io/TGC_Milestone_Project_2/movie.html). To be consistent with the landing page, the result page has the same inviting theatre curtain as the background picture as well. It is also dark themed so users are not jolted out of their eagerness and expectation to read the results.
 
@@ -131,7 +131,7 @@ If you would like to run this code locally, please follow these steps:
 4. Import the other files in your IDE and feel free to make changes to them
 
 #### Clone ####
-1. Clone the repository from [(Jimbo's Movie Search)](https://github.com/papadum-is-nice/TGC_Milestone_Project_2.git)
+1. Clone the repository from [Jimbo's Movie Search](https://github.com/papadum-is-nice/TGC_Milestone_Project_2.git)
 2. Click on green button *Clone or download* and copy the URL address shown in the input box
 3. Paste `git clone https://github.com/papadum-is-nice/TGC_Milestone_Project_2.git` into your IDE's terminal
 4. When you want to remove the connection, type `git remote rm origin` into your terminal
