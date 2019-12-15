@@ -6,6 +6,8 @@ By: Jimmy Hsu
 ## Demo
 A live demo of the finished project can be found [here](https://papadum-is-nice.github.io/TGC_Milestone_Project_2/).
 
+![Desktop Demo](https://github.com/papadum-is-nice/TGC_Milestone_Project_2/blob/master/Images/JimboMovieSearch.gif)
+
 ## Aim ##
 
 I have worked in the broadcast media industry almost my entire career and making TV programmes is my passion. Also, I am a movie buff and frequently search for additional information about the movies that I have watched. This is probably where the inspiration for this project came from because I am sure that there are many other like-minded people who would like a quick and easy way to access to detailed information on films of their choice.
