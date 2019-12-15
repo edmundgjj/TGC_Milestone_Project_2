@@ -74,6 +74,7 @@ Here are a list of programming languages, frameworks, technologies and tools use
 * CSS3
 * JavaScript
 * JQuery
+* [Axios callback](https://www.npmjs.com/package/axios) 
 * Markdown in [Google Colaboratory](https://research.google.com/colaboratory/faq.html)
     * Used for writing this README.md file
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -136,15 +137,17 @@ If you would like to run this code locally, please follow these steps:
 4. When you want to remove the connection, type `git remote rm origin` into your terminal
 
 ## Credits ##
-[Omdb](omdb api website) movie API
-Starter codes from [who](their website or youtube site)
+
+### API ###
+1. [Omdb](http://www.omdbapi.com/) movie API
 
 ### Code ###
 1. Inspired by Traversy Media’s “Build A JavaScript & jQuery Movie Info App in 30 Minutes” https://www.youtube.com/watch?v=YsPqjYGauns'
 2. Theme from https://bootswatch.com/
 Used and modified darkly theme 
 
-
 ### Images ###
 1. Movie posters taken from [Rotten Tomatoes](https://editorial.rottentomatoes.com/guide/best-movies-of-2019/)
-2. https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj6yY6h87fmAhVGXn0KHb7GBxYQjRx6BAgBEAQ&url=http%3A%2F%2Fclipart-library.com%2Ftheatre-curtains.html&psig=AOvVaw1jmD8ath4qU2vwlHtTtJHG&ust=1576507775519902
+2. [Curtain background](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj6yY6h87fmAhVGXn0KHb7GBxYQjRx6BAgBEAQ&url=http%3A%2F%2Fclipart-library.com%2Ftheatre-curtains.html&psig=AOvVaw1jmD8ath4qU2vwlHtTtJHG&ust=1576507775519902)
+
+**This is for educational use**
