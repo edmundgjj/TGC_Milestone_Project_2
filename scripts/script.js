@@ -61,7 +61,7 @@ function retrievemovie() {
                     .concat(movie.Writer, "</li>\n <li class=\"list-group-item\"><strong>Actors:</strong> ")
                     .concat(movie.Actors, "</li>\n </ul>\n </div>\n </div>\n <div id=\"desc\" class=\"row\">\n <div class=\"box\">\n <h3>Plot</h3>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">")
                     .concat(movie.Plot, "</li><ul class=\"movie-btns\">\n <hr>\n <a href=\"http://imdb.com/title/")
-                    .concat(movie.imdbID, "\" target=\"_blank\" class=\"btn btn-primary\">View IMDB</a>\n <a href=\"index.html\" class=\"btn btn-primary\">Go Back</a>\n </div>\n </div>\n ");
+                    .concat(movie.imdbID, "\" target=\"_blank\" class=\"btn btn-primary\">View On IMDB</a>\n <a href=\"index.html\" class=\"btn btn-primary\">Go Back</a>\n </div>\n </div>\n ");
             } else {
                 output = '<li>Something went wrong</li>';
             }
