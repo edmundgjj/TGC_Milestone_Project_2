@@ -1,5 +1,5 @@
-let api_query = 'http://www.omdbapi.com/?apikey=2f191c5b&s=';
-let api_info = 'http://www.omdbapi.com/?apikey=2f191c5b&i=';
+let api_query = 'https://www.omdbapi.com/?apikey=2f191c5b&s=';
+let api_info = 'https://www.omdbapi.com/?apikey=2f191c5b&i=';
 let input_form = document.getElementById("searchForm");
 let input_text = document.getElementById("searchText");
 let best_movies = document.getElementById("bestofhide");
