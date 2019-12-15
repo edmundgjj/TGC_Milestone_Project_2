@@ -48,7 +48,7 @@ At the bottom of the page, the users are presented with 2 buttons which allow th
 If the user chooses to go back, he/she will find that the previous search is still on the input box. This is because the local storage has stored this information temporarily.
 
 ## Wireframes ##
-Wireframes were created to help me visualise the website in different sized screens. They can be viewed via this [link]().
+Wireframes were created to help me visualise the website in different sized screens. They can be viewed via this [link](https://github.com/papadum-is-nice/TGC_Milestone_Project_2/tree/master/Images/Wireframes).
 
 ## User Stories ##
 These are the user stories that I intended to achieve while building this website:
